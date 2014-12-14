@@ -1,0 +1,2 @@
+" get in location list ptu services and tests
+:lvimgrep /^SERVICE \|^\s*TEST \a
