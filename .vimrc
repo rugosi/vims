@@ -1,8 +1,13 @@
 " set encoding=utf-8
 syntax on
-"set number
+"let Tlist_Ctags_Cmd="/home/reuss/gitrepos/ctags/ctags"
+"map <F9> :TlistToggle<CR>
+set number
 colorscheme zendnb 
-set guifont=Consolas\ 14
+"colorscheme asu1dark 
+"set guifont=Consolas\ 14
+set guifont=Mono\ 11
+"set guifont=Ubuntu\ Mono\ 11
 set hlsearch
 "set cursorline
 set copyindent
@@ -12,11 +17,11 @@ set smarttab
 set ic 
 
 " tabs
-set tabstop=4
+set tabstop=2
 set shiftwidth=2
 set expandtab
 
-set paste
+"set paste
 
 set showcmd
 set sm
@@ -33,10 +38,7 @@ set showtabline=1
 " autocmd BufWinEnter *.* silent loadview
 "set laststatus=0
 
-set guioptions-=r
-set guioptions-=L
-set guioptions-=m
-set guioptions-=T
+set guioptions-=rLmT
 
 set wildmenu
 
@@ -72,4 +74,7 @@ set linebreak
 "hi blue ctermbg=Blue guifg=White guibg=Blue
 so $HOME/.vim/plugin/mc.vim
 "let mapleader=","
-set term=ansi
+"set term=ansi
+set runtimepath^=~/.vim/bundle/ag
+set directory^=$HOME/.vimswap//
+set listchars=eol:×,tab:>-,trail:~,extends:>,precedes:<

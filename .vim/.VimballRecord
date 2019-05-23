@@ -1,0 +1,1 @@
+multisearch.vimball: call delete('/home/reuss/.vim/plugin/multisearch.vim')|call delete('/home/reuss/.vim/doc/Msearch.txt')
